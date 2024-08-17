@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.icet.controller.AddCustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#192a56" height="76.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Text fill="#f5f6fa" layoutX="137.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer Form">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtID" layoutX="225.0" layoutY="123.0" promptText="ID" />
+      <TextField fx:id="txtName" layoutX="225.0" layoutY="174.0" promptText="Name" />
+      <TextField fx:id="txtAddress" layoutX="225.0" layoutY="223.0" promptText="Address" />
+      <TextField fx:id="txtSalary" layoutX="225.0" layoutY="271.0" promptText="Salary" />
+      <JFXButton layoutX="532.0" layoutY="97.0" onAction="#btnSearchOnAction" style="-fx-background-color: #fbc531;" text="Search" textFill="#f5f6fa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="173.0" layoutY="330.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #e84118;" text="Delete" textFill="#f5f6fa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="305.0" layoutY="330.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #7f8fa6;" text="Update" textFill="#f5f6fa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="247.0" layoutY="330.0" onAction="#btnAddOnAction" style="-fx-background-color: #4cd137;" text="Add" textFill="#f5f6fa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="382.0" layoutY="330.0" onAction="#btnClearOnAction" style="-fx-background-color: #9c88ff;" text="Clear" textFill="#f5f6fa">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

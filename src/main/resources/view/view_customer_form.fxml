@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.icet.controller.ViewCustomerFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#192a56" height="80.0" layoutX="-10.0" layoutY="-15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="620.0" />
+            <Text fill="#f5f6fa" layoutX="180.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Form">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tblCustomer" layoutX="48.0" layoutY="117.0" prefHeight="200.0" prefWidth="498.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="129.60003662109375" text="Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="177.60003662109375" text="Address" />
+                  <TableColumn fx:id="colSalary" prefWidth="113.5999816894531" text="Salary" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="253.0" layoutY="339.0" onAction="#btnAReloadOnAction" prefHeight="35.0" prefWidth="93.0" style="-fx-background-color: #2f3640;" text="Reload" textFill="#f5f6fa">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
